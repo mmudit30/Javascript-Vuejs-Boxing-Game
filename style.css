@@ -1,0 +1,97 @@
+html{
+  background-size: 5%;
+  }
+
+  body{
+    background-image: url(images/arena.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .leftbox{
+    cursor: pointer;
+    transform: rotate(90deg);
+    margin-top:-30px;
+    width: 20%;
+  }
+  .rightbox{
+    cursor: pointer;
+    width: 20%;
+    margin-top: 50px;
+    transform: rotate(-90deg);
+    float:right;
+  }
+.punchme{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 350px;
+  height: 500px;
+}
+#bag{
+    width: 400px;
+    height: 500px;
+    margin: -200px auto -150px auto;
+    background: url(images/punchme.jpg) no-repeat;
+    background-size: 100%;
+}
+#bag-health{
+    position: relative;
+    margin:60px auto 0 auto;
+    width: 200px;
+    border: 2px solid #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(107, 119, 109, 1);
+
+}
+#bag-health div{
+    height: 20px;
+    background: crimson;
+}
+.bagtext{
+  font-size: 30px;
+  color: white;
+  top: 50%;
+  left: auto;
+  margin: auto auto;
+
+}
+.left{
+  animation: lkick 3s linear infinite;
+}
+.right{
+  animation: rkick 3s linear infinite;
+}
+.burst{
+  transform: rotateX(90deg);
+  }
+@keyframes rkick {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(-30deg);
+  }
+  50%{
+    transform: rotate(-50deg);
+  }
+}
+#controls button{
+  cursor: pointer;
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}
+@keyframes lkick {
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(30deg);
+  }
+  50%{
+    transform: rotate(50deg);
+  }
+}

@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script src="http://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+  <div id="vue-app">
+
+    <!--punch gloves-->
+    <div v-show="!ended">
+      <img v-on:click="lpunch" class="leftbox"  src="images/left.png">
+      <img v-on:click="rpunch" class="rightbox" src="images/left.png">
+
+      <!--bag -->
+      <div id="bag" v-bind:class="{left:lkick , right:rkick}">
+
+      </div>
+      <!--health -->
+      <div id="bag-health">Health
+        <div v-bind:style="{width: health + '%'}" ></div>
+      </div>
+    </div>
+      <!--control for restart -->
+    <div id="controls">
+      <div style="font-size:20px;color:white" v-show="ended">Game is Over</div>
+      <button v-on:click="restart" v-show="ended" >Restart</button>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
