@@ -1,2 +1,2 @@
-# Vuejs-Boxing-Game
+# Javascript based Vuejs-Boxing-Game
 Boxing game -learning Vuejs
